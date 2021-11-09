@@ -13,7 +13,7 @@ const Home = ({posts}) => {
       <div className="grid lg:grid-cols-3">
           {posts.map((post) => (
             <Link href={`/posts/${post.id}`} key={post.id}>
-            <a><PostCard  props = {post}/></a>
+            <a className='mb-5'><PostCard  props = {post}/></a>
             </Link>
           ))}
       </div>

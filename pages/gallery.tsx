@@ -8,10 +8,9 @@ import ImageCard from '../components/ImageCard'
 const Gallery = ({photos}) => {
 
     const [ postNum, setPostNum] = useState(8)
-    const [ loading, setLoading] = useState(12)
 
     function handleClick() {
-        setPostNum(prevPostNum => prevPostNum + 8)
+        setPostNum(prevPostNum => prevPostNum + 50)
     }
 
      return (

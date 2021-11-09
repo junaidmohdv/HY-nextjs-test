@@ -14,6 +14,7 @@ export default function PostDetails({post}){
     useEffect(() => {
         setAllComments(allComments)
     }, [])
+
     const submitComment = async () => {
         const response = await fetch('/api/comments', {
             method: 'POST',
@@ -22,10 +23,10 @@ export default function PostDetails({post}){
                 'Content-Type': 'application/json'
             }
         })
+
         const data = await response.json()
         setComment('')
         setAllComments(data)
-
     }
 
     return (
