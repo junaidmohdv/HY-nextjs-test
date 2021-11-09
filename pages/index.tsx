@@ -14,7 +14,7 @@ const Home = ({posts}) => {
 
           {posts.map((post) => (
             <Link href={`posts/${post.id}`} key={post.id}>
-            <a href="#">
+            <a className='mb-5'>
             <PostCard  props = {post}/>
             </a>
             </Link>
