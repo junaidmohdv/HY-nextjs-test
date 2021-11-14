@@ -21,14 +21,12 @@ export default function MyApp({ Component, pageProps }) {
     }, [router])
 
     return (
-        <>
             <Layout>
                 <main className="p-6" >
                 <Loader loading={loading} />  
                 <Component {...pageProps} />
                 </main>
             </Layout>
-        </>
     )
     
 }
